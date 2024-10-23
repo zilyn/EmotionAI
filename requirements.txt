@@ -4,7 +4,9 @@ pandas>=1.5.0
 matplotlib==3.6.3
 protobuf>=4.21.0
 scikit_learn==1.1.3
-SoundFile>=0.12.1  # Updated to allow compatible versions
+SoundFile>=0.12.1
 tensorflow==2.13.0
 tqdm==4.65.0
-
+streamlit==1.10.0
+streamlit-option-menu==0.3.2
+configparser==5.0.2
