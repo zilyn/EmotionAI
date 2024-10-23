@@ -4,6 +4,14 @@ import emotion_detection
 import driver_anger_alert
 import os
 
+# Load configuration
+config = configparser.RawConfigParser()
+config_file_path = os.path.join(os.path.dirname(__file__), '../input/config.ini')
+config.read(config_file_path)
+
+MODEL_SAVE_PATH = config.get('MODEL', 'model_save_path')
+EMOTIONS_LABEL = eval(config.get('DATA', 'emotions'))
+
 # Custom CSS
 st.markdown(
     """
