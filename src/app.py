@@ -7,7 +7,16 @@ import os
 # Load configuration
 config = configparser.RawConfigParser()
 config_file_path = os.path.join(os.path.dirname(__file__), '../input/config.ini')
+
+# Debugging information
+st.write(f"Config file path: {config_file_path}")
+if not os.path.exists(config_file_path):
+    st.error(f"Config file not found at {config_file_path}")
+
 config.read(config_file_path)
+
+# Debugging information
+st.write(f"Sections in config file: {config.sections()}")
 
 MODEL_SAVE_PATH = config.get('MODEL', 'model_save_path')
 EMOTIONS_LABEL = eval(config.get('DATA', 'emotions'))
