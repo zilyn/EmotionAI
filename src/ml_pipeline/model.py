@@ -80,7 +80,7 @@ def train_sklearn(data_x, data_y):
 def train(data_x, data_y, framework=None, model_save_path='./'):
     # Lets train the model with apropriate framewotk and model save path
     if framework==None or framework=='keras':
-        model_save_path +='/keras' 
+        model_save_path +='output/keras' 
         model = train_keras(data_x, data_y)
         model.save(model_save_path)
     else:
