@@ -8,7 +8,7 @@ import soundfile
 import numpy as np
 
 config = configparser.RawConfigParser()
-config.read('../input/config.ini')
+config.read('input/config.ini')
 
 DATA_DIR      = config.get('DATA','data_dir')
 FILE_GLOB     = config.get('DATA','file_glob')
