@@ -3,19 +3,6 @@
 This repository contains the code for the speech emotion recognition model built using keras, tensorflow and sklearn libraries. The data used for trainibg purposes is the RAVDESS Audio Dataset.
 
 Tested on python 3.11.0
-### Virtual environment creation
-use the following commands to create a venv -
-```
-python -m venv myenv
-```
-```
-myenv/Scripts/activate
-```
-
-### Cross check the installed python version
-```
-python --version
-```
 
 ### Installation
 To install the dependencies run:
