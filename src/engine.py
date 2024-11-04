@@ -14,7 +14,7 @@ from ml_pipeline.utils import load_train_data, load_infer_data
 from ml_pipeline.model import get_model, train
 
 config = configparser.RawConfigParser()
-config.read('../input/config.ini')
+config.read('input/config.ini')
 
 MODEL_SAVE_PATH    = config.get('MODEL', 'model_save_path')
 EMOTIONS_LABEL     = eval(config.get('DATA', 'emotions'))
