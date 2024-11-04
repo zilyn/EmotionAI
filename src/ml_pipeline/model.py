@@ -10,7 +10,7 @@ from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import accuracy_score
 
 config = configparser.RawConfigParser()
-config.read('../input/config.ini')
+config.read('input/config.ini')
         
 HIDDEN_LAYER_SHAPE = eval(config.get('MODEL', 'hidden_layer_shape'))
 BATCH_SIZE         = config.getint('MODEL', 'batch_size')
