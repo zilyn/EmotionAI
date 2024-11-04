@@ -25,7 +25,7 @@ if __name__=='__main__':
     parser.add_argument('--framework', type=str, default='keras', help='Keras/sklearn')
     parser.add_argument('--train', action='store_true', help='Train')
     parser.add_argument('--infer', action='store_true', help='Inference')
-    parser.add_argument('--infer-model-path', type=str, default='../output', help='Model path to infer from')
+    parser.add_argument('--infer-model-path', type=str, default='output', help='Model path to infer from')
     parser.add_argument('--infer-file-path', type=str, help='File path to infer on')
     
     
