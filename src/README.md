@@ -1,6 +1,6 @@
 # EmotionAI with keras, tensorflow and sklearn
 
-This repository contains the code for the speech emotion recognition model built using keras, tensorflow and sklearn libraries. The data used for trainibg purposes is the RAVDESS Audio Dataset.
+This repository contains the code for the speech emotion recognition model built using keras, tensorflow and sklearn libraries. The data used for training purposes is the RAVDESS Audio Dataset.
 
 Tested on python 3.11.0
 
