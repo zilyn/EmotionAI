@@ -84,7 +84,7 @@ def train(data_x, data_y, framework=None, model_save_path='./'):
         model = train_keras(data_x, data_y)
         model.save(model_save_path)
     else:
-        model_save_path += '/sklearn_model.pkl'
+        model_save_path += 'output/sklearn_model.pkl'
         model = train_sklearn(data_x, data_y)
         with open(model_save_path, 'wb') as f:
             pickle.dump(model, f)
