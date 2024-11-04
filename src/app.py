@@ -28,7 +28,7 @@ page = st.sidebar.radio("Go to", ["🏠 Home", "😊 Emotion Detection", "🚗 D
 # Navigation logic
 if page == "🏠 Home":
     # Display logo at the top left corner only on the homepage
-    logo_path = os.path.join(os.path.dirname(__file__), '../i.png')
+    logo_path = os.path.join(os.path.dirname(__file__), 'i.png')
     st.image(logo_path, width=130)
     home.app()
 elif page == "😊 Emotion Detection":
