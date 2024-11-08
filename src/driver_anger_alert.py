@@ -5,7 +5,7 @@ import wave
 from streamlit_mic_recorder import mic_recorder
 from tensorflow.keras.models import load_model
 from ml_pipeline.utils import extract_feature
-from config import EMOTIONS_LABEL, MODEL_SAVE_PATH, config
+from engine import EMOTIONS_LABEL, MODEL_SAVE_PATH, config
 
 def predict_alert(model, file_path, emotions_label):
     features = extract_feature(file_path)
